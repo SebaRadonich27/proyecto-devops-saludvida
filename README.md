@@ -108,3 +108,26 @@ Asignatura: DevOps
 Institución: IACC
 
 Año: 2026
+
+## Resultados de monitoreo local
+
+Durante las pruebas de SaludVida se verificó que el
+servidor Nginx respondió correctamente a las solicitudes
+de la página principal y la hoja de estilos, mediante
+respuestas HTTP 200.
+
+El monitoreo se realizó utilizando los comandos:
+
+- docker compose ps
+- docker logs saludvida-web
+- docker stats --no-stream
+
+En una medición puntual se registró un consumo de
+CPU de 0.00 % y 5.285 MiB de memoria.
+
+También se observó una respuesta HTTP 404 para
+favicon.ico, debido a que la aplicación no incluye
+un icono personalizado.
+
+Estos resultados evidencian el funcionamiento del
+servicio y la utilidad del monitoreo básico en DevOps.
