@@ -1,0 +1,10 @@
+
+services:
+  saludvida:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: saludvida-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped

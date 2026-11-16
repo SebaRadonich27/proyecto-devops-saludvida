@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaludVida | Reserva de Horas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>SaludVida</h1>
+        <p>Centro de Atención Médica</p>
+    </header>
+
+    <main>
+        <section class="bienvenida">
+            <h2>Reserva tu hora médica</h2>
+            <p>
+                Bienvenido a nuestro sistema de reservas.
+                Selecciona una especialidad y el horario
+                de atención que prefieras.
+            </p>
+        </section>
+
+        <section class="formulario">
+            <h2>Formulario de reserva</h2>
+
+            <form>
+                <label for="nombre">Nombre del paciente:</label>
+                <input type="text" id="nombre"
+                       placeholder="Ingrese su nombre" required>
+
+                <label for="especialidad">Especialidad médica:</label>
+                <select id="especialidad" required>
+                    <option value="">Seleccione una especialidad</option>
+                    <option>Medicina General</option>
+                    <option>Pediatría</option>
+                    <option>Cardiología</option>
+                    <option>Traumatología</option>
+                </select>
+
+                <label for="fecha">Fecha de atención:</label>
+                <input type="date" id="fecha" required>
+
+                <label for="hora">Horario:</label>
+                <select id="hora" required>
+                    <option value="">Seleccione un horario</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                </select>
+
+                <button type="button">
+                    Reserva de demostración
+                </button>
+            </form>
+
+            <p class="aviso">
+                Este es un sistema de demostración académica.
+                No registra reservas reales ni almacena datos.
+                No ingrese información personal verdadera.
+            </p>
+        </section>
+
+        <section class="informacion">
+            <h2>Información de atención</h2>
+            <p><strong>Horario:</strong> Lunes a viernes, 09:00 a 17:00</p>
+            <p><strong>Modalidad:</strong> Atención presencial</p>
+            <p><strong>Estado del servicio:</strong>
+               <span class="estado">Disponible (demostración)</span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>SaludVida © 2026 | Proyecto académico DevOps - IACC</p>
+    </footer>
+
+</body>
+</html>
